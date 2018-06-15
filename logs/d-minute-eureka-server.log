@@ -775,3 +775,37 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.em
 2018-06-15 00:16:20.236  INFO 3736 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 1111 (http)
 2018-06-15 00:16:20.237  INFO 3736 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 1111
 2018-06-15 00:16:20.242  INFO 3736 --- [main] c.u.d.DMinuteEurekaApplication           : Started DMinuteEurekaApplication in 13.016 seconds (JVM running for 13.945)
+2018-06-15 00:17:20.195  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:18:20.206  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2018-06-15 00:19:20.217  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2018-06-15 00:20:20.221  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:21:20.225  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-15 00:22:20.229  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:23:20.233  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:24:20.251  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 17ms
+2018-06-15 00:25:20.256  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2018-06-15 00:25:54.986  INFO 3736 --- [XNIO-2 task-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2018-06-15 00:25:55.483  INFO 3736 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-15 00:25:55.486  INFO 3736 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-15 00:25:55.518  INFO 3736 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-06-15 00:25:55.771  INFO 3736 --- [XNIO-2 task-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status UP (replication=false)
+2018-06-15 00:26:19.849  WARN 3736 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-15 00:26:20.262  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2018-06-15 00:27:20.262  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:28:20.274  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2018-06-15 00:29:20.278  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:30:20.281  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-15 00:31:19.863  INFO 3736 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2018-06-15 00:31:20.284  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-15 00:32:20.289  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:33:20.292  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-15 00:34:20.296  INFO 3736 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-15 00:34:57.892  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-15 00:34:57.909  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Fri Jun 15 00:16:14 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-15 00:34:57.924  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application d-minute-eureka-server with eureka with status DOWN
+2018-06-15 00:34:57.930  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-06-15 00:34:57.952  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2018-06-15 00:34:57.960  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2018-06-15 00:34:57.968  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-15 00:34:57.968  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-06-15 00:34:58.000  INFO 3736 --- [RMI TCP Connection(29)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
