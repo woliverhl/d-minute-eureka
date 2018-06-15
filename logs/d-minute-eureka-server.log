@@ -545,3 +545,233 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.em
 2018-06-14 22:37:51.393  INFO 15804 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-06-14 22:37:51.409  INFO 15804 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
 2018-06-14 22:37:52.024  INFO 15804 --- [XNIO-2 task-2] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2018-06-14 22:38:42.524  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:39:42.524  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:40:42.524  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:41:42.525  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:42:42.526  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 22:43:42.526  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:44:42.526  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:45:42.526  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:46:42.526  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:47:42.188  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 22:47:42.527  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:48:42.527  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:49:42.528  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 22:50:42.528  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:51:42.529  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:52:42.202  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 1
+2018-06-14 22:52:42.529  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:53:42.529  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:54:42.529  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:55:42.530  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 22:56:42.531  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:57:42.209  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 22:57:42.531  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:58:42.531  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 22:59:42.535  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-14 23:00:42.537  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 23:01:38.516  INFO 15804 --- [XNIO-2 task-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 with status UP (replication=false)
+2018-06-14 23:01:39.133  INFO 15804 --- [XNIO-2 task-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 (replication=false)
+2018-06-14 23:01:39.149  INFO 15804 --- [XNIO-2 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 with status DOWN (replication=false)
+2018-06-14 23:01:42.538  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:02:41.017  INFO 15804 --- [XNIO-2 task-12] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 with status UP (replication=false)
+2018-06-14 23:02:42.546  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2018-06-14 23:03:42.549  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:04:42.562  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2018-06-14 23:05:42.567  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2018-06-14 23:06:42.570  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:07:42.209  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2018-06-14 23:07:42.243  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 23:07:42.581  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2018-06-14 23:08:42.584  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:09:42.598  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2018-06-14 23:10:42.602  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-14 23:11:42.603  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 23:12:42.617  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2018-06-14 23:13:42.629  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2018-06-14 23:14:42.633  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:15:42.634  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:16:42.634  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:17:42.272  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 23:17:42.640  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2018-06-14 23:18:42.641  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:19:42.643  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:20:42.644  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:21:42.648  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-14 23:22:42.222  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2018-06-14 23:22:42.663  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2018-06-14 23:23:42.664  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:24:42.664  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:25:42.680  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2018-06-14 23:26:42.687  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2018-06-14 23:27:42.293  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 23:27:42.696  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2018-06-14 23:28:42.711  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2018-06-14 23:29:42.713  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 23:30:42.727  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2018-06-14 23:31:42.740  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2018-06-14 23:32:42.754  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2018-06-14 23:33:42.758  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:34:42.760  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:35:42.764  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:36:42.768  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:37:42.223  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2018-06-14 23:37:42.319  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 23:37:42.771  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:38:42.774  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:39:42.777  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:40:42.781  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-14 23:41:42.784  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-14 23:42:42.788  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-14 23:43:42.792  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-14 23:44:42.792  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:45:42.804  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2018-06-14 23:46:42.817  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2018-06-14 23:47:42.348  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 23:47:42.818  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-14 23:48:42.833  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 17ms
+2018-06-14 23:49:42.836  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 23:50:42.843  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2018-06-14 23:51:42.852  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2018-06-14 23:51:46.084  INFO 15804 --- [XNIO-2 task-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 (replication=false)
+2018-06-14 23:51:46.098  INFO 15804 --- [XNIO-2 task-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SADR/LAPTOP-TIMEQ9NC:sadr:3333 with status DOWN (replication=false)
+2018-06-14 23:52:42.227  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2018-06-14 23:52:42.861  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2018-06-14 23:53:42.876  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
+2018-06-14 23:54:42.880  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-14 23:59:10.033  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 207157ms
+2018-06-14 23:59:52.875  INFO 15804 --- [XNIO-2 task-24] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status UP (replication=false)
+2018-06-14 23:59:53.103  INFO 15804 --- [XNIO-2 task-25] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status DOWN (replication=false)
+2018-06-14 23:59:53.112  INFO 15804 --- [XNIO-2 task-26] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 (replication=false)
+2018-06-15 00:00:10.037  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-15 00:00:26.388  INFO 15804 --- [XNIO-2 task-27] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status UP (replication=false)
+2018-06-15 00:01:09.495  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-15 00:01:10.041  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:02:10.043  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-06-15 00:03:10.051  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2018-06-15 00:04:10.063  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2018-06-15 00:04:52.391  INFO 15804 --- [XNIO-2 task-19] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status DOWN (replication=false)
+2018-06-15 00:04:52.433  INFO 15804 --- [XNIO-2 task-20] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 (replication=false)
+2018-06-15 00:05:10.072  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2018-06-15 00:05:17.514  INFO 15804 --- [XNIO-2 task-21] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status UP (replication=false)
+2018-06-15 00:06:10.086  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2018-06-15 00:07:10.096  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2018-06-15 00:08:10.097  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:09:10.098  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-06-15 00:10:10.102  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2018-06-15 00:11:09.377  INFO 15804 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2018-06-15 00:11:09.512  WARN 15804 --- [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-15 00:11:10.103  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:12:10.107  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2018-06-15 00:12:26.272  INFO 15804 --- [XNIO-2 task-26] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status DOWN (replication=false)
+2018-06-15 00:12:26.308  INFO 15804 --- [XNIO-2 task-28] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 (replication=false)
+2018-06-15 00:12:51.145  INFO 15804 --- [XNIO-2 task-30] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status UP (replication=false)
+2018-06-15 00:13:10.115  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2018-06-15 00:14:10.118  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:15:10.118  INFO 15804 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-15 00:15:56.835  INFO 15804 --- [XNIO-2 task-12] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 with status DOWN (replication=false)
+2018-06-15 00:15:56.871  INFO 15804 --- [XNIO-2 task-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DMINUTEMS/LAPTOP-TIMEQ9NC:dminutems:8080 (replication=false)
+2018-06-15 00:16:01.920  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-15 00:16:01.941  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Thu Jun 14 22:37:36 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-15 00:16:01.953  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application d-minute-eureka-server with eureka with status DOWN
+2018-06-15 00:16:01.964  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-06-15 00:16:01.967  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2018-06-15 00:16:01.984  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2018-06-15 00:16:01.996  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-15 00:16:01.996  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-06-15 00:16:02.014  INFO 15804 --- [RMI TCP Connection(104)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-06-15 00:16:09.200  INFO 3736 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: https://dminute-config-server.herokuapp.com/
+2018-06-15 00:16:14.481  INFO 3736 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=b6f889ae645b2236480622e45a472e5d6e205bbd, state=null
+2018-06-15 00:16:14.509  INFO 3736 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-15 00:16:14.574  INFO 3736 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-15 00:16:14.616  INFO 3736 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Fri Jun 15 00:16:14 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-15 00:16:15.644  INFO 3736 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0c18ee73-084b-3927-8131-cccf34f64d68
+2018-06-15 00:16:15.673  INFO 3736 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-15 00:16:15.748  INFO 3736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$695b24a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-15 00:16:15.761  INFO 3736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53488161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-15 00:16:15.962  INFO 3736 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2018-06-15 00:16:15.978  INFO 3736 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2018-06-15 00:16:16.029  WARN 3736 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2018-06-15 00:16:16.029  WARN 3736 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2018-06-15 00:16:16.057  INFO 3736 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2018-06-15 00:16:16.057  INFO 3736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1441 ms
+2018-06-15 00:16:16.794  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-06-15 00:16:16.797  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-15 00:16:16.805  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-15 00:16:16.805  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-15 00:16:16.814  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-15 00:16:16.822  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestTraceFilter' to: [/*]
+2018-06-15 00:16:16.823  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2018-06-15 00:16:16.824  INFO 3736 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-15 00:16:16.825  INFO 3736 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-15 00:16:17.148  WARN 3736 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-15 00:16:17.149  INFO 3736 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-15 00:16:17.156  WARN 3736 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-15 00:16:17.164  INFO 3736 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-15 00:16:17.528  INFO 3736 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Fri Jun 15 00:16:14 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-15 00:16:17.657  INFO 3736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-15 00:16:17.659  INFO 3736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-15 00:16:17.667  INFO 3736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-15 00:16:17.668  INFO 3736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-15 00:16:17.710  INFO 3736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-15 00:16:17.710  INFO 3736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-15 00:16:17.780  INFO 3736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-15 00:16:19.185  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-15 00:16:19.199  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-15 00:16:19.200  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.206  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.210  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-06-15 00:16:19.211  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.212  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-15 00:16:19.220  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.222  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-15 00:16:19.223  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.225  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.226  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-15 00:16:19.228  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.229  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.230  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-15 00:16:19.239  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-15 00:16:19.240  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.242  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-15 00:16:19.242  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.244  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-15 00:16:19.244  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.245  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-15 00:16:19.246  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-15 00:16:19.246  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-06-15 00:16:19.247  INFO 3736 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-06-15 00:16:19.379  INFO 3736 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Fri Jun 15 00:16:14 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977] and template loader path [classpath:/templates/]
+2018-06-15 00:16:19.380  INFO 3736 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-15 00:16:19.732  INFO 3736 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-06-15 00:16:19.843  INFO 3736 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2018-06-15 00:16:19.845  WARN 3736 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-15 00:16:19.861  INFO 3736 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2018-06-15 00:16:19.871  INFO 3736 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2018-06-15 00:16:19.889  WARN 3736 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka-server is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka-server
+2018-06-15 00:16:19.963  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-15 00:16:19.979  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-15 00:16:19.980  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-15 00:16:19.981  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-15 00:16:19.983  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-06-15 00:16:19.984  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-15 00:16:19.989  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-15 00:16:20.006  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-06-15 00:16:20.016  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-15 00:16:20.033  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5dd91bca,type=ConfigurationPropertiesRebinder]
+2018-06-15 00:16:20.042  INFO 3736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-15 00:16:20.066  INFO 3736 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-06-15 00:16:20.067  INFO 3736 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application d-minute-eureka-server with eureka with status UP
+2018-06-15 00:16:20.132  INFO 3736 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2018-06-15 00:16:20.145  INFO 3736 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2018-06-15 00:16:20.146  INFO 3736 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2018-06-15 00:16:20.184  INFO 3736 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2018-06-15 00:16:20.185  INFO 3736 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2018-06-15 00:16:20.185  INFO 3736 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2018-06-15 00:16:20.185  INFO 3736 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2018-06-15 00:16:20.185  INFO 3736 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2018-06-15 00:16:20.197  INFO 3736 --- [Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2018-06-15 00:16:20.236  INFO 3736 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 1111 (http)
+2018-06-15 00:16:20.237  INFO 3736 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 1111
+2018-06-15 00:16:20.242  INFO 3736 --- [main] c.u.d.DMinuteEurekaApplication           : Started DMinuteEurekaApplication in 13.016 seconds (JVM running for 13.945)

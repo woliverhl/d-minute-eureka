@@ -4,5 +4,5 @@ spring:
   cloud:
     config:
       failFast: true
-      uri: http://localhost:8888
+      uri: https://dminute-config-server.herokuapp.com/
       
