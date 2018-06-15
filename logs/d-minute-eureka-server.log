@@ -1,0 +1,547 @@
+2018-06-14 22:10:06.521  INFO 9160 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:10:06.613  INFO 9160 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17a1e4ca: startup date [Thu Jun 14 22:10:06 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@fbd1f6
+2018-06-14 22:10:06.676  WARN 9160 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:10:06.707 ERROR 9160 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:12:36.617  INFO 12304 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:12:36.695  INFO 12304 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17a1e4ca: startup date [Thu Jun 14 22:12:36 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@fbd1f6
+2018-06-14 22:12:36.740  WARN 12304 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:12:36.755 ERROR 12304 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:13:14.654  INFO 15596 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:13:14.732  INFO 15596 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@301ec38b: startup date [Thu Jun 14 22:13:14 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@fbd1f6
+2018-06-14 22:13:14.769  WARN 15596 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:13:14.784 ERROR 15596 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:15:40.634  INFO 5504 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:15:45.131  INFO 5504 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:15:45.184  INFO 5504 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:15:45.293  INFO 5504 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:15:45.324  INFO 5504 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a98a6a: startup date [Thu Jun 14 22:15:45 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b94b04d
+2018-06-14 22:15:45.371  WARN 5504 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:15:45.387 ERROR 5504 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:17:28.289  INFO 204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://d-minute-config-server:8888
+2018-06-14 22:17:29.275 ERROR 204 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:130) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:89) ~[spring-cloud-context-1.1.3.RELEASE.jar:1.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://d-minute-config-server:8888/d-minute-eureka-server/default": d-minute-config-server; nested exception is java.net.UnknownHostException: d-minute-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:539) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:170) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:91) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	... 7 common frames omitted
+Caused by: java.net.UnknownHostException: d-minute-config-server
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 11 common frames omitted
+
+2018-06-14 22:18:17.929  INFO 7012 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://config-server:8888
+2018-06-14 22:18:20.320 ERROR 7012 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:130) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:89) ~[spring-cloud-context-1.1.3.RELEASE.jar:1.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:567) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:338) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-server:8888/d-minute-eureka-server/default": config-server; nested exception is java.net.UnknownHostException: config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:539) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:170) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:91) ~[spring-cloud-config-client-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	... 7 common frames omitted
+Caused by: java.net.UnknownHostException: config-server
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_161]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 11 common frames omitted
+
+2018-06-14 22:18:40.153  INFO 13856 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:18:41.910  INFO 13856 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:18:41.921  INFO 13856 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:18:41.968  INFO 13856 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:18:41.984  INFO 13856 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a98a6a: startup date [Thu Jun 14 22:18:41 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b94b04d
+2018-06-14 22:18:42.035  WARN 13856 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:18:42.038 ERROR 13856 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:22:19.848  INFO 14960 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:22:22.157  INFO 14960 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:22:22.171  INFO 14960 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:22:22.218  INFO 14960 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:22:22.233  INFO 14960 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a98a6a: startup date [Thu Jun 14 22:22:22 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b94b04d
+2018-06-14 22:22:22.265  WARN 14960 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:22:22.280 ERROR 14960 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:23:14.345  INFO 15176 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:23:15.754  INFO 15176 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:23:15.764  INFO 15176 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:23:15.811  INFO 15176 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:23:15.827  INFO 15176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4212a0c8: startup date [Thu Jun 14 22:23:15 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b94b04d
+2018-06-14 22:23:15.874  WARN 15176 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:23:15.889 ERROR 15176 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:29:18.026  INFO 15204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:29:19.130  INFO 15204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:29:19.220  INFO 15204 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:29:19.266  INFO 15204 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:29:19.282  INFO 15204 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a98a6a: startup date [Thu Jun 14 22:29:19 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b94b04d
+2018-06-14 22:29:19.313  WARN 15204 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+2018-06-14 22:29:19.329 ERROR 15204 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [cl.usach.dminuteeureka.DMinuteEurekaApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:621) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:200) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:169) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.14.RELEASE.jar:1.5.14.RELEASE]
+	at cl.usach.dminuteeureka.DMinuteEurekaApplication.main(DMinuteEurekaApplication.java:12) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:163) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:385) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:319) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:247) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:611) ~[spring-context-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/FilterRegistrationBean
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:152) ~[spring-core-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.FilterRegistrationBean
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_161]
+	... 25 common frames omitted
+
+2018-06-14 22:37:35.460  INFO 15804 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-06-14 22:37:36.751  INFO 15804 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=d-minute-eureka-server, profiles=[default], label=master, version=08c03bb706378c80d8ab9a13e18f5d06d04ccc89, state=null
+2018-06-14 22:37:36.762  INFO 15804 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='configClient'}]]
+2018-06-14 22:37:36.809  INFO 15804 --- [main] c.u.d.DMinuteEurekaApplication           : No active profile set, falling back to default profiles: default
+2018-06-14 22:37:36.824  INFO 15804 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Thu Jun 14 22:37:36 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-14 22:37:37.893  INFO 15804 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0c18ee73-084b-3927-8131-cccf34f64d68
+2018-06-14 22:37:37.926  INFO 15804 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-14 22:37:38.004  INFO 15804 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$695b24a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 22:37:38.019  INFO 15804 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53488161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 22:37:38.254  INFO 15804 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2018-06-14 22:37:38.270  INFO 15804 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2018-06-14 22:37:38.316  WARN 15804 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2018-06-14 22:37:38.316  WARN 15804 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2018-06-14 22:37:38.348  INFO 15804 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2018-06-14 22:37:38.348  INFO 15804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1524 ms
+2018-06-14 22:37:39.038  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-06-14 22:37:39.054  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestTraceFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-06-14 22:37:39.056  INFO 15804 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-14 22:37:39.274  WARN 15804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-14 22:37:39.274  INFO 15804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-14 22:37:39.290  WARN 15804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-06-14 22:37:39.290  INFO 15804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-06-14 22:37:39.648  INFO 15804 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Thu Jun 14 22:37:36 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977
+2018-06-14 22:37:39.764  INFO 15804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 22:37:39.764  INFO 15804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 22:37:39.780  INFO 15804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 22:37:39.780  INFO 15804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 22:37:39.827  INFO 15804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 22:37:39.827  INFO 15804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 22:37:39.905  INFO 15804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 22:37:41.068  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-06-14 22:37:41.084  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.084  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-06-14 22:37:41.084  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.099  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.115  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-06-14 22:37:41.131  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-06-14 22:37:41.131  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-06-14 22:37:41.131  INFO 15804 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-06-14 22:37:41.271  INFO 15804 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dd91bca: startup date [Thu Jun 14 22:37:36 CLT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@424e1977] and template loader path [classpath:/templates/]
+2018-06-14 22:37:41.271  INFO 15804 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-06-14 22:37:42.036  INFO 15804 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-06-14 22:37:42.176  INFO 15804 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2018-06-14 22:37:42.185  WARN 15804 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2018-06-14 22:37:42.201  INFO 15804 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2018-06-14 22:37:42.201  INFO 15804 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2018-06-14 22:37:42.232  WARN 15804 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka-server is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka-server
+2018-06-14 22:37:42.310  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 22:37:42.326  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-06-14 22:37:42.326  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-06-14 22:37:42.326  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-06-14 22:37:42.342  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-06-14 22:37:42.342  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-06-14 22:37:42.342  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-06-14 22:37:42.357  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-06-14 22:37:42.373  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-06-14 22:37:42.388  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5dd91bca,type=ConfigurationPropertiesRebinder]
+2018-06-14 22:37:42.388  INFO 15804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-06-14 22:37:42.420  INFO 15804 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-06-14 22:37:42.420  INFO 15804 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application d-minute-eureka-server with eureka with status UP
+2018-06-14 22:37:42.482  INFO 15804 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2018-06-14 22:37:42.482  INFO 15804 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2018-06-14 22:37:42.482  INFO 15804 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2018-06-14 22:37:42.520  INFO 15804 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2018-06-14 22:37:42.521  INFO 15804 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2018-06-14 22:37:42.521  INFO 15804 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2018-06-14 22:37:42.522  INFO 15804 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2018-06-14 22:37:42.522  INFO 15804 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2018-06-14 22:37:42.534  INFO 15804 --- [Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2018-06-14 22:37:42.575  INFO 15804 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 1111 (http)
+2018-06-14 22:37:42.576  INFO 15804 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 1111
+2018-06-14 22:37:42.581  INFO 15804 --- [main] c.u.d.DMinuteEurekaApplication           : Started DMinuteEurekaApplication in 8.799 seconds (JVM running for 9.655)
+2018-06-14 22:37:51.376  INFO 15804 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 22:37:51.393  INFO 15804 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 22:37:51.409  INFO 15804 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-14 22:37:52.024  INFO 15804 --- [XNIO-2 task-2] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
