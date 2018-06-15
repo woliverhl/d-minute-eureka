@@ -22,8 +22,6 @@ eureka:
 
 # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
 spring:
-  application:
-    name: d-minute-eureka
   thymeleaf:
     enabled: false     # Disable Thymeleaf 
    
