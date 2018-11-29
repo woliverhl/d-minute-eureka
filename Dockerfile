@@ -12,7 +12,7 @@ EXPOSE 8002
 #RUN apk update && apk install -y tzdata
 #ENV TZ America/Santiago
 
-ENV CONFIG_SERVER_DMINUTE=https://dminute-config-server.herokuapp.com/
+ENV CONFIG_SERVER_DMINUTE=http://172.17.0.6:8888
 
 # The application's jar file
 ARG JAR_FILE=target/d-minute-eureka-1.0.0.jar
